@@ -182,7 +182,7 @@ with onglet5:
     st.markdown("""
 ### Protection des données (RGPD)
 
-- Les données que vous téléversez sont traitées de manière <span style="color: red;">**confidentielle**</span>.
+- Les données que vous téléversez sont traitées de manière <span style="color: blue;">**confidentielle**</span>.
 - Aucune donnée personnelle n’est stockée sans **consentement explicite**.
 - Vous pouvez à tout moment demander la **suppression de vos données**.
 
