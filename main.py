@@ -42,16 +42,14 @@ st.markdown("<h1 style='text-align: center; color: black;'>Projet E3E</h1>", uns
 
 #### ONGLETS #####################################################################
 
-onglet1, onglet2, onglet3, onglet4, onglet5 = st.tabs(["Accueil", "Analyse", "Références","À propos", "Réglemenation"])
+onglet1, onglet2, onglet3, onglet4, onglet5 = st.tabs(["Accueil", "Analyse", "Références","À propos", "Réglementation"])
 
 with onglet1:
     st.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
     st.write("- Cette application assiste les étudiants et professionnels en médecine dans l'analyse d’images radiologiques.")
     st.image(image, caption="Voici mon logo", use_container_width=True)
+    st.header("Téléversez une image médicale")
     st.write("- Vous pouvez téléverser une image, la faire analyser automatiquement, l’annoter, ou vous entraîner avec des cas.")
-    # Interaction
-
-    st.header("📤 Téléversez une image médicale")
     uploaded_file = st.file_uploader("Image radiologique (PNG, JPG, JPEG)", type=["png", "jpg", "jpeg"])
     
     if uploaded_file is not None:
@@ -180,36 +178,36 @@ with onglet4:
 
 with onglet5:
     st.markdown("""
-### Protection des données (RGPD)
+### -- Protection des données (RGPD)
 
-- Les données que vous téléversez sont traitées de manière <span style="color: blue;">**confidentielle**</span>.
+- Les données que vous téléversez sont traitées de manière <span style="color: red;">**confidentielle**</span>.
 - Aucune donnée personnelle n’est stockée sans **consentement explicite**.
 - Vous pouvez à tout moment demander la **suppression de vos données**.
 
 ---
 
-### Hébergement des données (HDS)
+### -- Hébergement des données (HDS)
 
 - Les données médicales sont stockées sur des serveurs **certifiés HDS** (Hébergement de Données de Santé).
 - Cela garantit **sécurité, traçabilité et conformité**.
 
 ---
 
-### Application non-diagnostique
+### -- Application non-diagnostique
 
 - Cette application est un **outil pédagogique ou d'aide à l'analyse**.
 - Elle **ne remplace pas un diagnostic médical professionnel**.
 
 ---
 
-### Transparence de l'IA
+### -- Transparence de l'IA
 
 - Les algorithmes utilisés sont en cours de validation et **ne sont pas certifiés dispositif médical**.
 - Les résultats proposés sont **indicatifs**.
 
 ---
 
-### Politique de confidentialité
+### -- Politique de confidentialité
 
 👉 Vous pouvez consulter notre [politique de confidentialité](#) ou nous contacter à : **support@tonappli.fr**
 
