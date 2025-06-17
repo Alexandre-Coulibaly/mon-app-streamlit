@@ -30,7 +30,7 @@ st.markdown("""
         font-family: 'Open Sans', sans-serif;  /* Texte par défaut */
     }
     h1, h2, h3 {
-        font-family: 'Caprasimo', static;  /* Titres */
+        font-family: 'Caprasimo', cursive;  /* Titres */
     }
     .sidebar .css-1d391kg {  /* Sidebar optionnel */
         font-family: 'Inter', sans-serif;
