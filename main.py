@@ -24,13 +24,13 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&family=Open+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&displ');
-    @import url('https://fr.maisfontes.com/nf-le-petit-cochon-regular.police#google_vignette');
+    @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
     html, body, [class*="css"]  {
         font-family: 'Open Sans', sans-serif;  /* Texte par défaut */
     }
     h1, h2, h3 {
-        font-family: 'Le Petit Cochon', serif;  /* Titres */
+        font-family: 'Caprasimo', serif;  /* Titres */
     }
     .sidebar .css-1d391kg {  /* Sidebar optionnel */
         font-family: 'Inter', sans-serif;
