@@ -36,7 +36,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header en haut de la page
-col1, col2, col3 = st.columns([1, 2, 1])  # ajuste les proportions si besoin
+col1, col2, col3 = st.columns([1, 2, 4, 2, 1])  # ajuste les proportions si besoin
 
 with col1:
     st.image("IA/Logo.png", width=150)  # ajuste le chemin et la taille
