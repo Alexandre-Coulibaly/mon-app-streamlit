@@ -24,16 +24,13 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&family=Open+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&displ');
-    @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swa');
 
     html, body, [class*="css"]  {
         font-family: 'Open Sans', sans-serif;  /* Texte par défaut */
     }
     h1, h2, h3 {
-        font-family: 'Caprasimo', cursive;  /* Titres */
-    }
-    .sidebar .css-1d391kg {  /* Sidebar optionnel */
-        font-family: 'Inter', sans-serif;
+        font-family: 'Oswald', sans-serif;  /* Titres */
     }
     </style>
 """, unsafe_allow_html=True)
