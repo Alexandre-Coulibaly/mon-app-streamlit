@@ -38,7 +38,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header en haut de la page
-st.markdown("<h1 style='text-align: center; color: black;'>Projet E3E</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>A EYE Médicale</h1>", unsafe_allow_html=True)
+st.write("L’appli qui garde un œil sur vous (et les professionnels) !")
 
 #### ONGLETS #####################################################################
 
