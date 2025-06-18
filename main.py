@@ -27,19 +27,19 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swa');
 
     html, body, [class*="css"]  {
-        font-family: 'Open Sans', sans-serif;  /* Texte par défaut */
+        font-family: 'Open Sans', sans-serif; 
     }
     h1, h2, h3 {
-        font-family: 'Oswald', sans-serif;  /* Titres */
+        font-family: 'Oswald', sans-serif;  
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Header en haut de la page
-col1, col2, col3 = st.columns([1, 2, 1])  # ajuste les proportions si besoin
+col1, col2, col3 = st.columns([1, 2, 1])  
 
 with col1:
-    st.image("IA/Logo.png", width=150)  # ajuste le chemin et la taille
+    st.image("IA/Logo.png", width=150)  
 
 with col2:
     st.markdown("<h1 style='text-align: center; color: black;'>A EYE Médicale</h1>", unsafe_allow_html=True)
@@ -50,7 +50,8 @@ with col3:
 st.markdown("<p style='text-align: center;'>L’appli qui garde un œil sur vous (et les professionnels) !</p>", unsafe_allow_html=True)
 
 ### SIDEBAR ##############################################################
-st.sidebar.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
+
+st.sidebar.markdown("<h2>Réglementations</h2>", unsafe_allow_html=True)
 st.sidebar.markdown("""
 ### -- Protection des données (RGPD)
 
