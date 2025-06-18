@@ -49,9 +49,46 @@ with col3:
 
 st.markdown("<p style='text-align: center;'>L’appli qui garde un œil sur vous (et les professionnels) !</p>", unsafe_allow_html=True)
 
+### SIDEBAR ##############################################################
+
+st.sidebar.markdown("""
+### -- Protection des données (RGPD)
+
+- Les données que vous téléversez sont traitées de manière <span style="color: red;"><strong>confidentielle</strong></span>.
+- Aucune donnée personnelle n’est stockée sans <strong>consentement explicite</strong>.
+- Vous pouvez à tout moment demander la <strong>suppression de vos données</strong>.
+
+---
+
+### -- Hébergement des données (HDS)
+
+- Les données médicales sont stockées sur des serveurs <strong>certifiés HDS</strong> (Hébergement de Données de Santé).
+- Cela garantit <strong>sécurité, traçabilité et conformité</strong>.
+
+---
+
+### -- Application non-diagnostique
+
+- Cette application est un <strong>outil pédagogique ou d'aide à l'analyse</strong>.
+- Elle <strong>ne remplace pas un diagnostic médical professionnel</strong>.
+
+---
+
+### -- Transparence de l'IA
+
+- Les algorithmes utilisés sont en cours de validation et <strong>ne sont pas certifiés dispositif médical</strong>.
+- Les résultats proposés sont <strong>indicatifs</strong>.
+
+---
+
+### -- Politique de confidentialité
+
+👉 Vous pouvez consulter notre <a href="#">politique de confidentialité</a> ou nous contacter à : <strong>support@tonappli.fr</strong>
+""", unsafe_allow_html=True)
+
 #### ONGLETS #####################################################################
 
-onglet1, onglet2, onglet3, onglet4, onglet5 = st.tabs(["Accueil", "Analyse", "Références","À propos", "Réglementation"])
+onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Références","À propos"])
 
 with onglet1:
     st.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
@@ -184,44 +221,6 @@ with onglet4:
         </div>
     </div>
     """, unsafe_allow_html=True)
-
-with onglet5:
-    st.markdown("""
-### -- Protection des données (RGPD)
-
-- Les données que vous téléversez sont traitées de manière <span style="color: red;">**confidentielle**</span>.
-- Aucune donnée personnelle n’est stockée sans **consentement explicite**.
-- Vous pouvez à tout moment demander la **suppression de vos données**.
-
----
-
-### -- Hébergement des données (HDS)
-
-- Les données médicales sont stockées sur des serveurs **certifiés HDS** (Hébergement de Données de Santé).
-- Cela garantit **sécurité, traçabilité et conformité**.
-
----
-
-### -- Application non-diagnostique
-
-- Cette application est un **outil pédagogique ou d'aide à l'analyse**.
-- Elle **ne remplace pas un diagnostic médical professionnel**.
-
----
-
-### -- Transparence de l'IA
-
-- Les algorithmes utilisés sont en cours de validation et **ne sont pas certifiés dispositif médical**.
-- Les résultats proposés sont **indicatifs**.
-
----
-
-### -- Politique de confidentialité
-
-👉 Vous pouvez consulter notre [politique de confidentialité](#) ou nous contacter à : **support@tonappli.fr**
-
-""", unsafe_allow_html=True)
-
 
 # Footer (en bas de la page)
 st.markdown("---")
