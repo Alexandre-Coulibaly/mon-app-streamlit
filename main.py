@@ -88,7 +88,7 @@ st.sidebar.markdown("""
 
 #### ONGLETS #####################################################################
 
-onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Références","À propos"])
+onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Référces","À propos"])
 
 with onglet1:
     st.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
