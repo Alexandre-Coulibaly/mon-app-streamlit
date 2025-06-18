@@ -47,7 +47,7 @@ with col2:
 with col3:
     st.image("IA/Logo.png", width=150)  # ajuste le chemin et la taille
 
-st.markdown("<p style='text-align: center;'>L’appli qui garde un œil sur vous (et les professionnels) !</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #3ba3ae;'>L’appli qui garde un œil sur vous (et les professionnels) !</p>", unsafe_allow_html=True)
 
 ### SIDEBAR ##############################################################
 
