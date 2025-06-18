@@ -94,7 +94,7 @@ onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Référence
 with onglet1:
     st.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
     st.write("- Cette application assiste les étudiants et professionnels en médecine dans l'analyse d’images radiologiques.")
-    st.image(image, caption="Voici mon logo", use_container_width=True)
+    st.image(image, caption="Exemple d'image", use_container_width=True)
     st.header("Téléversez une image médicale")
     st.write("- Vous pouvez téléverser une image, la faire analyser automatiquement, l’annoter, ou vous entraîner avec des cas.")
     uploaded_file = st.file_uploader("Image radiologique (PNG, JPG, JPEG)", type=["png", "jpg", "jpeg"])
@@ -109,11 +109,7 @@ with onglet2:
 
     if "image_upload" in st.session_state:
         image = st.session_state["image_upload"]
-        st.image(image, caption="🩻 Image à analyser", use_container_width=True)
-
-        # Exemple d’analyse (à remplacer par ton algorithme)
-        st.markdown("✅ *Simulation d'analyse IA...*")
-        st.write("Résultat : Rien d'anormal détecté ✅")
+        st.image(image, use_container_width=True)
 
     else:
         st.warning("⚠️ Aucune image téléversée. Veuillez d'abord importer une image dans l'onglet 'Téléversement'.")
