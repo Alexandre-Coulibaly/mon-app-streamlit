@@ -109,7 +109,7 @@ with onglet2:
 
     if "image_upload" in st.session_state:
         image = st.session_state["image_upload"]
-        st.image(image, caption="🩻 Image à analyser", use_column_width=True)
+        st.image(image, caption="🩻 Image à analyser", use_container_width=True)
 
         # Exemple d’analyse (à remplacer par ton algorithme)
         st.markdown("✅ *Simulation d'analyse IA...*")
