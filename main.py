@@ -42,7 +42,7 @@ with col1:
     st.image("IA/Logo.png", width=150)  
 
 with col2:
-    st.markdown("<h1 style='text-align: center; color: #3ba3ae;'>A EY Médicale</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #3ba3ae;'>A EYE Médicale</h1>", unsafe_allow_html=True)
     
 with col3:
     st.image("IA/Logo.png", width=150)  # ajuste le chemin et la taille
