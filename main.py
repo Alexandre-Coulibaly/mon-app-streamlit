@@ -105,7 +105,7 @@ with onglet1:
         st.success("✅ Image enregistrée pour l'analyse. Veuillez vous rendre sur l'onglet 'Analyse' pour observer les résultats.")
         
 with onglet2:
-    st.header("Résultats de l'analyse")
+    st.markdown("<h2 style='text-align: center; color:#2f2a85;'>Résultats de l'analyse</h2>", unsafe_allow_html=True)
 
     if "image_upload" in st.session_state:
         image = st.session_state["image_upload"]
@@ -115,10 +115,10 @@ with onglet2:
         st.warning("⚠️ Aucune image téléversée. Veuillez d'abord importer une image dans l'onglet 'Téléversement'.")
 
 with onglet3:
-    st.header("Références")
+    st.markdown("<h2 style='text-align: center; color:#2f2a85;'>Références</h2>", unsafe_allow_html=True)
 
 with onglet4:
-    st.header("À propos")
+    st.markdown("<h2 style='text-align: center; color:#2f2a85;'>À propos</h2>", unsafe_allow_html=True)
     st.write("- Créé par des élèves de E3E")
     st.markdown("- Intégration d'un modèle multimodal <strong> (texte + image) </strong> dans une application pour assister les étudiants ou professionnels en médecine à analyser des images radiologiques.", unsafe_allow_html=True)
     st.markdown(f"""
