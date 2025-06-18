@@ -50,7 +50,7 @@ with col3:
 st.markdown("<p style='text-align: center;'>L’appli qui garde un œil sur vous (et les professionnels) !</p>", unsafe_allow_html=True)
 
 ### SIDEBAR ##############################################################
-
+st.sidebar.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
 st.sidebar.markdown("""
 ### -- Protection des données (RGPD)
 
@@ -88,7 +88,7 @@ st.sidebar.markdown("""
 
 #### ONGLETS #####################################################################
 
-onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Référces","À propos"])
+onglet1, onglet2, onglet3, onglet4 = st.tabs(["Accueil", "Analyse", "Références","À propos"])
 
 with onglet1:
     st.markdown("<h2 style='color:red;'>Bienvenue sur l'accueil</h2>", unsafe_allow_html=True)
