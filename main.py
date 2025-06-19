@@ -107,23 +107,10 @@ with onglet1:
 with onglet2:
     st.markdown("<h2 style='text-align: center; color:#2f2a85;'>Résultats de l'analyse</h2>", unsafe_allow_html=True)
 
-    if "image_upload" in st.session_state:
-    image = st.session_state["image_upload"]
-    st.image(image, use_container_width=True)
-
-    prompt = st.text_area("Question / Indication médicale (optionnel)", placeholder="Ex : Qu’observez-vous sur cette radio pulmonaire ?")
-    
-        if st.button("Analyser l'image avec Gemma 3"):
-            st.info("🧠 Analyse en cours...")
-    
-            # Appel du modèle multimodal
-            response = call_gemma_model(image, prompt)
-            
-            st.success("✅ Analyse terminée.")
-            st.markdown(f"**Réponse du modèle :**\n\n{response}")
-    
-    else:
-        st.warning("⚠️ Aucune image téléversée.")
+    if uploaded_file is not None:
+        image = Image.open(uploaded_file)
+        st.session_state["image_upload"] = image
+        st.success("✅ Image enregistrée pour l'analyse. Veuillez vous rendre sur l'onglet 'Analyse' pour observer les résultats.")
 
 with onglet3:
     st.markdown("<h2 style='text-align: center; color:#2f2a85;'>Références</h2>", unsafe_allow_html=True)
