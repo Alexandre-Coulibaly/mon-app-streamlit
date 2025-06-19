@@ -3,4 +3,9 @@ pandas
 numpy
 scikit-learn
 matplotlib
-pillow
+Pillow
+torch==2.2.2  # ou la dernière version stable compatible
+transformers
+sentencepiece
+peft
+accelerate
