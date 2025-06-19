@@ -4,7 +4,6 @@ numpy
 scikit-learn
 matplotlib
 Pillow
-torch==2.2.2  # ou la dernière version stable compatible
 transformers
 sentencepiece
 peft
