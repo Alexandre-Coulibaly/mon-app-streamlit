@@ -125,9 +125,6 @@ with onglet2:
     else:
         st.warning("⚠️ Aucune image téléversée.")
 
-    else:
-        st.warning("⚠️ Aucune image téléversée. Veuillez d'abord importer une image dans l'onglet 'Téléversement'.")
-
 with onglet3:
     st.markdown("<h2 style='text-align: center; color:#2f2a85;'>Références</h2>", unsafe_allow_html=True)
 
