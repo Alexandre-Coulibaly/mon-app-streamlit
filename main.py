@@ -6,6 +6,24 @@ from PIL import Image
 import base64
 from io import BytesIO
 
+def call_gemma_model(image_pil, prompt=""):
+    """Envoie image + prompt au serveur Gemma multimodal et renvoie la réponse texte."""
+    buffer = BytesIO()
+    image_pil.save(buffer, format="PNG")
+    img_b64 = base64.b64encode(buffer.getvalue()).decode()
+
+    payload = {
+        "image": img_b64,
+        "prompt": prompt
+    }
+
+    try:
+        r = requests.post("http://localhost:8000/multimodal", json=payload, timeout=30)
+        r.raise_for_status()
+        return r.json().get("response", "Réponse vide.")
+    except Exception as e:
+        return f"❌ Erreur d’appel au modèle : {e}"
+
 # Convertir image locale en base64
 def image_to_base64(path):
     img = Image.open(path)
