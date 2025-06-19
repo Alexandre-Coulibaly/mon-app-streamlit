@@ -8,3 +8,4 @@ transformers
 sentencepiece
 peft
 accelerate
+sentencepiece==0.1.99
