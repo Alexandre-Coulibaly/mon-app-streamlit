@@ -99,20 +99,20 @@ with onglet1:
     st.write("- Vous pouvez téléverser une image, la faire analyser automatiquement, l’annoter, ou vous entraîner avec des cas.")
     uploaded_file = st.file_uploader("Image radiologique (PNG, JPG, JPEG)", type=["png", "jpg", "jpeg"])
     
-        if "image_upload" in st.session_state:
-        image = st.session_state["image_upload"]
-        st.image(image, use_container_width=True)
+    if "image_upload" in st.session_state:
+    image = st.session_state["image_upload"]
+    st.image(image, use_container_width=True)
     
-        prompt = st.text_area("Question / Indication médicale (optionnel)", placeholder="Ex : Qu’observez-vous sur cette radio pulmonaire ?")
+    prompt = st.text_area("Question / Indication médicale (optionnel)", placeholder="Ex : Qu’observez-vous sur cette radio pulmonaire ?")
         
-            if st.button("Analyser l'image avec Gemma 3"):
-                st.info("🧠 Analyse en cours...")
+        if st.button("Analyser l'image avec Gemma 3"):
+            st.info("🧠 Analyse en cours...")
         
-                # Appel du modèle multimodal
-                response = call_gemma_model(image, prompt)
+            # Appel du modèle multimodal
+            response = call_gemma_model(image, prompt)
                 
-                st.success("✅ Analyse terminée.")
-                st.markdown(f"**Réponse du modèle :**\n\n{response}")
+            st.success("✅ Analyse terminée.")
+            st.markdown(f"**Réponse du modèle :**\n\n{response}")
         
         else:
             st.warning("⚠️ Aucune image téléversée.")
