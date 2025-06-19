@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-import base64
+import requests, base64
 from io import BytesIO
 
 def call_gemma_model(image_pil, prompt=""):
