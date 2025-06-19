@@ -1,12 +1,11 @@
-# Streamlit + utils
 streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
 Pillow
-
-# Transformers
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
-
-transformers>=4.40
+torch==2.2.2  # ou la dernière version stable compatible
+transformers
+sentencepiece
 peft
 accelerate
